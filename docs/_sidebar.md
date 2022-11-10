@@ -1,9 +1,16 @@
-- Getting started
-  - [Project Structure](project_structure.md)
-  - [Asset Definition](assets.md)
-  - [Pipeline](pipeline.md)
-  - [Tasks](tasks.md)
-    - [SQL Tasks](sql_tasks.md)
-    - [Python Tasks](python_tasks.md)
-    - [Blast Scheduler Operators](operators.md)
+- [Getting started](intro.md)
+- [Setup](project/project_structure.md)
+  - [Pipeline](project/pipeline/pipeline.md)
+    - [Notifications](project/pipeline/notifications/notifications.md)
+      - [Slack Notifications](project/pipeline/notifications/slack.md)
+      - [Discord Notifications](project/pipeline/notifications/discord.md)
+  - [Tasks](project/tasks/tasks.md)
+    - [SQL Tasks](project/tasks/sql_tasks.md)
+    - [Python Tasks](project/tasks/python_tasks.md)
+    - [Blast Scheduler Operators](project/tasks/operators/operators.md)
+- Examples
+  - SQL Tasks
+    - [BigQuery](examples/sql/bigquery.md)
+    - [Athena](examples/sql/athena.md)
+  - [Python Tasks](examples/python/python.md)
   

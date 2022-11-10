@@ -1,9 +1,8 @@
-# `SQL Tasks`
-
-## 1.`BigQuery Tasks`
+# BigQuery Tasks
 
 Query below is named `gcp.events` and it is a `Bigquery SQL task` that will run in Blast-Scheduler.
-```
+
+```sql
 -- @blast.name: gcp.events
 -- @blast.type: bq.sql
 
@@ -36,7 +35,7 @@ WHERE event_date BETWEEN start_dt AND end_dt
 ```
 
 Below query is named `gcp.users`, it is another `Bigquery SQL Task`, but it depends `gcp.events`. Which means `gcp.events` must be successful for `gcp.users` to run.
-```
+```sql
 -- @blast.name: gcp.users
 -- @blast.type: bq.sql
 -- @blast.depends: gcp.events
@@ -53,7 +52,8 @@ GROUP BY 1,2,3
 ```
 
 This is created from a `.yml` file. This task will look for a SQL script named `totals.sql` in the project. You can speficy full path of where your script is located but it is advised to keep the scripts and task generator `.yml` file together under a folder to keep project organized.
-```
+
+```yaml
 name: gcp.totals
 type: bq.sql
 run: totals.sql
@@ -61,8 +61,10 @@ run: totals.sql
 depends:
   - gcp.users
 ```
+
 This is how the `totals.sql` looks like:
-```
+
+```sql
 CREATE OR REPLACE TABLE my_schema.total
 SELECT
     SUM(event_value)
@@ -71,8 +73,5 @@ FROM my_schema.users
 ```
 
 This is how the final pipeline looks like:
+
 ![Image](/assets/gcp_pipe.png "a title")
-## 2.`Athena Tasks`
-
-
-# `Python Tasks`

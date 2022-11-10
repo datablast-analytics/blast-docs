@@ -1,4 +1,4 @@
-## `SQL Tasks`
+## SQL Tasks
 Blast-Scheduler currently supports 3 SQL dialects for SQL tasks which are `BigQuery`, `Snowflake` and `Athena`. The corresponding task types are as follows:
 
 ```
@@ -7,11 +7,11 @@ sf.sql → Snowflake
 athena.sql → AWS Athena
 ```
 
-#### 1. `Creating a SQL task from comments`
+#### 1. Creating a SQL task from comments
 
 To create a SQL task from comments, you need to define your task information on top of your `.sql` file. 
 
-```
+```sql
 -- @blast.name: datablast-project.events
 -- @blast.type: bq.sql
 -- @blast.depends: core.model
@@ -22,10 +22,10 @@ To create a SQL task from comments, you need to define your task information on 
 SELECT * FROM MY_TABLE
 ```
 
-#### 2. `Creating a SQL task from YAML`
+#### 2. Creating a SQL task from YAML
 By defining your task information in a `.yml` file you can create a SQL task. 
 
-```
+```yaml
 name: my_task
 run: sql_file.sql
 type: bq.sql

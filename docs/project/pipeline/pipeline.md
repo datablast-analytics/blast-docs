@@ -1,4 +1,4 @@
-## `pipeline.yml`
+# Pipeline
 
 `pipeline.yml` contains all the necessary information to build a data pipeline.
 
@@ -28,13 +28,5 @@ notifications:             # define the preferred notifications under this secti
 
 - `id`: Name of the pipeline.
 - `schedule`: Schedule information in the form of a cron job.
-- `default_args`: Default arguments to use when creating the pipeline.
-- `depends_on_past`: A boolean when set to true, keeps a task from getting triggered if the previous schedule for the task hasn’t succeeded.
 - `start_date`: Start date of the pipeline.
-- `retries`: How many retries should be made before marking a task as FAILED.
-- `default_connections`: Connections to use when no connections are specified for the task.
-- `notifications`: Specify the notification channels to be used. There can be multiple notification channels. For every notification channel you define there are four parameters to specify. The parameters are:
-  - `name`: Name for the channel.
-  - `connection`: Connection ID of the channel.
-  - `success`: Message to be formatted with relevant information and sent to the specified channel when pipeline succeeds.
-  - `failure`:  Message to be formatted with relevant information and sent to the specified channel when pipeline fails.
+- `notifications`: Specify the notification channels to be used. For more information see [Notifications]()
