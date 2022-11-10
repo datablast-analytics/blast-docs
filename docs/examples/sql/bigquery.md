@@ -33,7 +33,7 @@ FROM my_schema.raw_events_table
 WHERE event_date BETWEEN start_dt AND end_dt
 ;
 ```
-
+--- 
 Below query is named `gcp.users`, it is another `Bigquery SQL Task`, but it depends `gcp.events`. Which means `gcp.events` must be successful for `gcp.users` to run.
 ```sql
 -- @blast.name: gcp.users
@@ -50,8 +50,8 @@ FROM my_schema.events_table
 GROUP BY 1,2,3
 ;
 ```
-
-This is created from a `.yml` file. This task will look for a SQL script named `totals.sql` in the project. You can speficy full path of where your script is located but it is advised to keep the scripts and task generator `.yml` file together under a folder to keep project organized.
+---
+This is a task created from a `.yml` file. This task will look for a SQL script named `totals.sql` in the project. You can speficy full path of where your script is located but it is advised to keep the scripts and task generator `.yml` file together under a folder to keep project organized.
 
 ```yaml
 name: gcp.totals
