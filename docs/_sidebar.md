@@ -1,4 +1,4 @@
-- [Getting started](intro.md)
+- [Getting started](README.md)
 - [Setup](project/project_structure.md)
   - [Pipeline](project/pipeline/pipeline.md)
     - [Notifications](project/pipeline/notifications/notifications.md)
@@ -12,5 +12,5 @@
   - SQL Tasks
     - [BigQuery](examples/sql/bigquery.md)
     - [Athena](examples/sql/athena.md)
-  - [Python Tasks](examples/python/python.md)
+    - [Python Tasks](examples/python/python.md)
   

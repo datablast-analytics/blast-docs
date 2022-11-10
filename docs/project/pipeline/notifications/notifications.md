@@ -1,7 +1,7 @@
 # Notifications
 Blast Scheduler sends notifications about pipeline status. There are 2 notification channels available:
-- [Slack](slack.md)
-- [Discord](discord.md)
+- [Slack](project/pipeline/notifications/slack.md)
+- [Discord](project/pipeline/notifications/discord.md)
 
 You can specify which channels you want to use in your `pipeline.yml` file. There are 4 arguments to specify for every channel you want to receive notifications, :
 
