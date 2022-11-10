@@ -5,7 +5,7 @@ Blast Scheduler can send notifications to your Discord channel. You need to prov
 
 1. Click `Edit Channel` on a text channel in your discord server which you want to use as the notification channel.
    
-![discord1](../../../../assets/discord1.png)
+![discord1](../../../assets/discord1.png)
 
 2. Go to `Integrations` tab and click `Create Webhook`.
 

@@ -11,4 +11,4 @@ SELECT * FROM orders
 WHERE status IN ['paid']
 ```
 
-Head to the [Getting Started](project/project_structure.md) for more details.
+Head to the [Setup](project/project_structure.md) for more details.

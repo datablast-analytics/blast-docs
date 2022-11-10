@@ -74,4 +74,4 @@ FROM my_schema.users
 
 This is how the final pipeline looks like:
 
-![Image](/assets/gcp_pipe.png "a title")
+![Image](../../assets/gcp_pipe.png)

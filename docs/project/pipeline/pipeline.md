@@ -29,4 +29,4 @@ notifications:             # define the preferred notifications under this secti
 - `id`: Name of the pipeline.
 - `schedule`: Schedule information in the form of a cron job.
 - `start_date`: Start date of the pipeline.
-- `notifications`: Specify the notification channels to be used. For more information see [Notifications]()
+- `notifications`: Specify the notification channels to be used. For more information see [Notifications](project/pipeline/notifications/notifications.md)
