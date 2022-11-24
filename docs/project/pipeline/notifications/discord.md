@@ -1,7 +1,8 @@
-# Discord Notifications
-Blast Scheduler can send notifications to your Discord channel. You need to provide a Discord Web Hook and use given id as your `connection` parameter.
+## Discord Notifications
 
-## How to get a Discord Web Hook
+Blast Scheduler can send notifications to a Discord text channel. You need to provide a `Discord Web Hook` and use the given id as in your `connection` parameter.
+
+#### How to get a Discord Web Hook
 
 1. Click `Edit Channel` on a text channel in your discord server which you want to use as the notification channel.
 

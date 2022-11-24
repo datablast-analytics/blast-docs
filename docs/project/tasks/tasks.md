@@ -1,8 +1,9 @@
-## `tasks`
+## Tasks
 
 `tasks` directory consists of the tasks you want to run on Blast-Scheduler. The tasks directory can contain nested folders with  `.sql`, `.py`, `.sh` files or `.yml` files which run Blast-Scheduler custom operators.  For good convention, grouping similar tasks in the same folder is advised which helps to keep the project cleaner and more organized.
 
-`Task Parameters`
+#### Task Parameters
+
 - `name`: Name of the task.
 - `run`: Path of the file to be run. 
 - `type`: The type of task to be run.
