@@ -1,4 +1,5 @@
-# `Blast Scheduler Operators`
+## Blast Scheduler Operators
+Blast Scheduler provides custom operators for different scenarios to be used in pipelines.
 
-#### 1. `BigQuery Cost Tracker`
-#### 2. `Adjust Export to BigQuery`
+- [BigQuery Cost Tracker](cost_tracker.md): Track query costs on your projects.
+- [Adjust Export to BigQuery](adjust.md): Export data from Adjust Report Services to a BigQuery table.
