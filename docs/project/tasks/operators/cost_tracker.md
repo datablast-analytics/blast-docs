@@ -48,4 +48,4 @@ Notifications received will look like this:
 +----------+---------+-------+
 ```
 
-_**Important Note**_: _`gcpConnectionId` in connections must have `BigQuery Resource Viewer` permission on every project speficied in `projects` parameter._
+_**Important Note**_: Service account used in _`gcpConnectionId` must have `BigQuery Resource Viewer` permission on every project speficied in `projects` parameter._

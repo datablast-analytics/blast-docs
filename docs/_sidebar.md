@@ -10,6 +10,7 @@
     - [Blast Scheduler Operators](project/tasks/operators/operators.md)
       - [BigQuery Cost Tracker](project/tasks/operators/cost_tracker.md)
       - [Adjust Export to BigQuery](project/tasks/operators/adjust.md)
+      - [Appsflyer Export to BigQuery](project/tasks/operators/appsflyer.md)
 - Examples
   - SQL Tasks
     - [BigQuery](examples/sql/bigquery.md)

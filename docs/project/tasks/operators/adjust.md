@@ -10,7 +10,7 @@ connections:
     adjust: adjust-token-id
 
 adjust:
-  report_service: # this needs to be included for `report service`
+  report_service: # this needs to be included for `Report Service API`.
     refresh_days: 5
     dimensions:
       - day
@@ -37,6 +37,7 @@ output:
     dataset: my_dataset
     table: my_adjust_report_table
 ```
+For more information about Adjust Report Service API, [click here.](https://help.adjust.com/vi/article/report-service-api)
 
 - `name`: Name of the task.
 - `type`:For this operator it **MUST** be `adjust.export.bq`. 
