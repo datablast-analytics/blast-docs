@@ -1,4 +1,4 @@
-# Project Structure
+## Project Structure
 
 Running tasks on Blast-Scheduler requires a Git repository with the following structure:
 
@@ -19,9 +19,8 @@ tasks
   └ task.yml       --> tasks can also be defined just as YAML files as well, e.g. data ingestion tasks
 ```
 
-- `tasks` folder with the tasks you want to run on Blast-Scheduler. 
+`tasks` folder with the tasks you want to run on Blast-Scheduler. You can learn more about supported task types in [Tasks](project/tasks/tasks.md).
   - All the tasks you want to run must be inside the tasks folder.
   - tasks folder can contain folders/nested folders.
-  - You can learn more about supported task types in [Tasks](project/tasks/tasks.md).
   
-- `pipeline.yml`: this file contains the pipeline-level configuration, such as the schedule. You can learn more about pipelines in [Pipeline](project/pipeline/pipeline.md).
+`pipeline.yml`: this file contains the pipeline-level configuration, such as the schedule. You can learn more about pipelines in [Pipeline](project/pipeline/pipeline.md).

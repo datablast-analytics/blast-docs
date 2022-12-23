@@ -1,4 +1,4 @@
-# Pipeline
+## Pipeline
 
 `pipeline.yml` contains all the necessary information to build a data pipeline.
 
